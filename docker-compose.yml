@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  coding-club-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: coding-club-server
+    restart: unless-stopped
+    ports:
+      - "1337:1337"
